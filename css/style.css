@@ -46,7 +46,33 @@ p {
   color: #fff;
   background: #333;
   padding: 13px 20px; /* centers words in button */
-  border: none;
+  border: none; /* for buttons as well, default: buttons have border, links do not, same with cursor below*/
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+}
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
 }
 
 /* Navbar */
@@ -107,4 +133,41 @@ p {
 #showcase .showcase-content p {
   padding-bottom: 20px;
   line-height: 1.7em;
+}
+
+/* Home Info */
+#home-info {
+  height: 400px;
+}
+
+#home-info .info-img {
+  float: left;
+  width: 50%;
+  background: url('../img/photo-1.jpg') no-repeat;
+  min-height: 100%; /* makes image take up the whole space we put it in */
+}
+
+#home-info .info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden; /* no scrollbars if anything is bigger than window */
+}
+
+#home-info .info-content p {
+  padding-bottom: 30px;
+}
+
+/* Features */
+.box {
+  float: left; /* like list items, make 3 sub sections go horizontal */
+  width: 33.3%; /* take up even space, 3 sub sections */
+  padding: 50px; /* remember box-sizing: border-box, so padding doesn't apply to width */
+  text-align: center;
+}
+
+.box i {
+  margin-bottom: 10px;
 }
